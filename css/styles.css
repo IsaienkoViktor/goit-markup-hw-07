@@ -264,7 +264,6 @@ body {
 .hero-header-title {
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 72px;
     text-align: center;
@@ -338,9 +337,7 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-@media screen and (max-width: 428px) {
-  .sides-menu {
+.sides-menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -348,31 +345,24 @@ body {
     text-align: left;
     justify-content: center;    
   }
-}
+
 @media screen and (min-width: 768px) {
   .sides-menu {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row; 
-    /* width: calc((100% - 24px) / 2); */
-    row-gap: 24px;
-    column-gap: 72px;
-
+    row-gap: 72px;
+    column-gap: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .sides-item {
-    
+  .sides-item {    
     width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .sides-menu {
-    display: flex;
     gap: 24px;
-
   }
 }
 
@@ -381,8 +371,7 @@ body {
     width: calc((100% - 72px) / 4);
   }
 }
-@media screen and (max-width: 428px) {
-   .sides-header{
+.sides-header{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -390,29 +379,33 @@ body {
     text-align: center;
     text-transform: capitalize;
   }
+@media screen and (min-width: 768px) {
+   .sides-header{
+    text-align: left;
+  }
 }
- 
 
-@media screen and (max-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .sides-header {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
-} {
-    
-}
-
+}   
 .sides-content {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
+  }
 
+
+@media only screen and (min-width: 1158px) {
+  .sides-content {
+    font-weight: 400;
+  }
 }
 .sides-link{
     display: none;
 }
-
 @media screen and (min-width: 1158px) {
   .sides-link {
     display: flex;
@@ -430,6 +423,11 @@ body {
   | Section What are we doing -"wawd"
   |============================
 */
+@media screen and (max-width: 1157px) {
+  .wawd-section {
+    display: none;
+  }
+}
 .wawd-section{
     padding-top: 0;
     padding-bottom: 120px;}
@@ -455,33 +453,84 @@ body {
   | Section our team - "ot"
   |============================
 */
+
 .ot-section{
     background:  #F4F4FD;
-    max-width: 1440px;
+    max-width: 428px;
     background-position: center;
-    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+@media screen and (min-width: 768px) {
+  .ot-section {
+    max-width: 768px;
+    padding-top: 104px;    
+  }
+}
+@media screen and (min-width: 1158px) {
+  .ot-section {
+    max-width: 1440px;
     padding-top: 120px;
-    padding-bottom: 120px;}
+    padding-bottom: 120px;
+  }
+}
 .ot-header-subtitle {
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
-
 }
-
+@media screen and (min-width: 768px) {
+  .ot-header-subtitle {
+    margin-bottom: 64px;
+  }
+} 
 .ot-menu {
     display: flex;
-    gap: 24px;}
-
+    gap: 72px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 82px;
+    padding-right: 82px; */
+}
+@media screen and (min-width: 768px) {
+  .ot-menu {
+    flex-direction: row;
+    row-gap: 64px;
+    column-gap: 24px;
+    /* padding-left: 104px;
+    padding-right: 104px; */
+  }
+}
+@media screen and (min-width: 1158px) {
+  .ot-menu {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 24px;
+    /* padding-left: 156px;
+    padding-right: 156px; */
+  }
+}
 .ot-item {
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .ot-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .ot-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 .ot-header-suptitle {
