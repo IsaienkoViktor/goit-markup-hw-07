@@ -51,24 +51,31 @@ button {
     cursor: pointer;
 
 }
-img{display: block;}
+img{
+    display: block;
+}
 /**
   |============================
   | My styles
   |============================
 */
+
+/* Mobile styles  */
 .container{
         max-width: 428px;
         padding: 0 16px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 2px solid red;
+        outline-offset: -2px;
     }    
-
+/* Tablet styles */
 @media screen and (min-width: 768px) {
     .container{
         max-width: 768px;     
     
     }
-    
+/* Desktop styles      */
 }
 @media screen and (min-width: 1158px) {
     .container{
@@ -77,11 +84,6 @@ img{display: block;}
     }
     
 }
-
-
-
-
-
 /* .container {
     width: 1158px;
     margin-left: auto;
@@ -214,11 +216,40 @@ body {
    |============================
  */
 
- 
+/* .container{
+        max-width: 428px;
+        padding: 0 16px;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 2px solid red;
+        outline-offset: -2px;
+    }    
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 768px;     
+    
+    }
+/* Desktop styles     
+}
+@media screen and (min-width: 1158px) {
+    .container{
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+    
+} */
+
+
 .hero-section {
+    padding-top: 112px;
+    padding-bottom: 112px; 
+}
+@media screen and (min-width: 1158px) {
+  .hero-section {
     padding-top: 188px;
     padding-bottom: 188px;
-    
+
+  }
 }
 .hero-bg{
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/people-office-min.jpg);
@@ -230,16 +261,28 @@ body {
     margin: 0 auto;
     background-color: #2E2F42;
 }
-
-.hero-header-title{
-    font-size: 56px;
-    line-height: 1.07;
+.hero-header-title {
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 496px;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-header-title {
+      font-size: 56px;
+      line-height: 1.07;
+      margin-bottom: 48px;
+
+    }
+  }
+@media screen and (min-width: 1158px) {
+  .hero-header-title   { 
+    margin-bottom: 36px;
+  }
 }
 
 .hero-button {
@@ -270,10 +313,18 @@ body {
   | Section Sides -"Sides"
   |============================
 */
-.sides-section {
+
+.sides-section{
+    padding-top: 96px;
+    padding-bottom: 96px;    
+}
+@media screen and (min-width: 1158px) {
+  .sides-section {
     padding-top: 120px;
     padding-bottom: 120px;
-}
+  }
+}   
+
 .sides-header2-hidden {
     position: absolute;
     width: 1px;
@@ -287,19 +338,69 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/* .sides-container{} */
-.sides-menu {
+
+@media screen and (max-width: 428px) {
+  .sides-menu {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 72px;
+    text-align: left;
+    justify-content: center;    
+  }
+}
+@media screen and (min-width: 768px) {
+  .sides-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    /* width: calc((100% - 24px) / 2); */
+    row-gap: 24px;
+    column-gap: 72px;
+
+  }
 }
 
-.sides-item {width: calc((100% - 72px) / 4);}
+@media screen and (min-width: 768px) {
+  .sides-item {
+    
+    width: calc((100% - 24px) / 2);
+  }
+}
 
-.sides-header {
+@media screen and (min-width: 1158px) {
+  .sides-menu {
+    display: flex;
+    gap: 24px;
+
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .sides-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+@media screen and (max-width: 428px) {
+   .sides-header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+ 
+
+@media screen and (max-width: 1158px) {
+  .sides-header {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 8px;
+  }
+} {
+    
 }
 
 .sides-content {
@@ -309,6 +410,11 @@ body {
 
 }
 .sides-link{
+    display: none;
+}
+
+@media screen and (min-width: 1158px) {
+  .sides-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,7 +422,8 @@ body {
     height: 112px;
     border-radius: 4px;
     margin-bottom: 8px;
-}
+  }
+} 
 
 /**
   |============================
@@ -610,7 +717,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    column-gap: 24px;
+    column-gap: 24px;    
 }
 .portfolio-item {    
     width: calc((100% - 48px) / 3);
