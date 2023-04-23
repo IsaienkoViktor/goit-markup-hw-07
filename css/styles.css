@@ -1230,6 +1230,11 @@ body {
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 40px;
 }
 .mobile-menu.is-open{
     position: fixed;
@@ -1240,10 +1245,62 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
-    background-color: rgba(132, 133, 109, 0.9)  
+    background-color: white;
     }
 .mobile-close-btn{
     position: absolute;
-    top: 10;
-    right: 10;
+    top: 24px;
+    right: 48px;
+}
+.mobile-list{
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+.mobile-social-link-menu{
+  display: flex;
+  gap: 64px;
+}
+.mobile-link{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2E2F42;
+transition: color var(--transition);
+}
+.mobile-address{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;  
+}
+.mobile-link-mail{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+.mobile-link-tel{
+  display: block;
+  width: 353px;
+  margin-bottom: 40px;
+}
+.mobile-link:hover,
+.mobile-link:focus{
+  color: #404BBF;;
+}
+.mobile-link-mail:hover,
+.mobile-link-mail:focus{
+  color: #404BBF;;
+}
+.burger-btn{
+  color: black;
+  border: transparent;
+  background-color: transparent;
+  margin-right: 16px;
+}
+.burger-icon{
+  fill: currentColor;
 }
