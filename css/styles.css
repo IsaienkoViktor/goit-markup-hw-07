@@ -1226,4 +1226,24 @@ body {
     text-decoration: underline;
     color:#4D5AE5;
 }
-
+.mobile-menu{
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.mobile-menu.is-open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    background-color: rgba(132, 133, 109, 0.9)  
+    }
+.mobile-close-btn{
+    position: absolute;
+    top: 10;
+    right: 10;
+}
