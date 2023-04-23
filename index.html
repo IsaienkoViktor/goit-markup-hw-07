@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container header-container">
+        <a class="logo" href="./index.html"
+          >web<span class="header-span">Studio</span></a
+        >
         <nav class="navigation">
-          <a class="logo" href="./index.html"
-            >web<span class="header-span">Studio</span></a
-          >
           <ul class="header-menu">
             <li class="header-item">
               <a class="header-item-link current" href="./index.html">Studio</a>
@@ -53,20 +53,21 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn js-open-menu" type="button">menu</button>
       </div>
-    </header> -->
-    <main>
-      <!-- <section class="hero-section hero-bg">
+    </header>
+    <!-- <main>
+      <section class="hero-section hero-bg">
         <div class="container">
           <h1 class="hero-header-title">
-            Effective Solutions<br>for Your Business
+            Effective Solutions<br />for Your Business
           </h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
-      <!-- <section class="sides-section">
+      </section>
+      <section class="sides-section">
         <div class="container sides-container">
           <h2 class="sides-header2-hidden">Our strengths</h2>
           <ul class="sides-menu">
@@ -120,8 +121,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="wawd-section">
+      </section>
+      <section class="wawd-section">
         <div class="container">
           <h2 class="wawd-header-subtitle">What are we doing</h2>
           <ul class="wawd-menu">
@@ -144,8 +145,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="ot-section">
+      </section>
+      <section class="ot-section">
         <div class="container">
           <h2 class="ot-header-subtitle">Our Team</h2>
           <ul class="ot-menu">
@@ -407,8 +408,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="c-section">
+      </section>
+      <section class="c-section">
         <div class="container">
           <h2 class="c-header">Customers</h2>
           <ul class="c-list">
@@ -444,11 +445,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="footer-main">
-      <div class="container footer-social">
-        <div class="footer-logo-text">
+      <div class="container footer-wrapper">
+        <div class="footer-logo-wrapper">
           <a class="logo footer-logo" href="./index.html"
             >web<span class="footer-span">Studio</span></a
           >
@@ -534,7 +535,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -590,6 +591,91 @@
         </form>
       </div>
     </div>
+    <div class="mobile-wrapper js-menu-container">
+      <ul class="mobile-menu">
+        <li class="mobile-item">
+          <a href="./index.html" class="mobile-link">Studio</a>
+        </li>
+        <li class="mobile-item">
+          <a href="./portfolio.html" class="mobile-link">Portfolio</a>
+        </li>
+        <li class="mobile-item">
+          <a href="./index.html" class="mobile-link">Contacts</a>
+        </li>
+      </ul>
+      <address class="mobile-address">
+        <ul class="mobile-address-menu">
+          <li class="mobile-address-item">
+            <a class="mobile-item-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-address-item">
+            <a class="header-item-phone" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-social-links">
+        <li class="mobile-social-item">
+          <a
+            class="mobile-social-link"
+            href="instagram.com"
+            target="_blank"
+            rel="noopener noreferer"
+            aria-label="link to instagram"
+          >
+            <svg class="mobile-social-icon" width="16" height="16">
+              <use href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a
+            class="mobile-social-link"
+            href="twitter.com"
+            target="_blank"
+            rel="noopener noreferer"
+            aria-label="link to twitter"
+          >
+            <svg class="mobile-social-icon" width="16" height="16">
+              <use href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a
+            class="social-link"
+            href="facebook.com"
+            target="_blank"
+            rel="noopener noreferer"
+            aria-label="link to facebook"
+          >
+            <svg class="mobile-social-icon" width="16" height="16">
+              <use href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a
+            class="mobile-social-link"
+            href="linkedin.com"
+            target="_blank"
+            rel="noopener noreferer"
+            aria-label="link to linkedin"
+          >
+            <svg class="mobile-social-icon" width="16" height="16">
+              <use href=""></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button class="mobile-close-btn js-close-menu" type="button">
+        close
+      </button>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
