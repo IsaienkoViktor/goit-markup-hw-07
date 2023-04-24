@@ -178,9 +178,9 @@ body {
     margin-right: auto; */
   
 
-@media only screen and (min-width: 1158px) {
-  .logo {
-    padding-right: 76px;
+@media only screen and (min-width: 768px) {
+  .header-menu {
+    margin-right: 76px;
   }
 }
 
@@ -239,6 +239,11 @@ body {
     flex-direction: column;
     gap: 12px;
     font-size: 12px;
+      }
+}
+@media only screen and (min-width: 1158px) {
+  .header-address-menu {
+    font-size: 16px;
       }
 }
 @media only screen and (min-width: 1158px) {
