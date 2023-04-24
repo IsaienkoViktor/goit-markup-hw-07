@@ -339,10 +339,11 @@ body {
   }
 }
 .hero-bg{
-    max-width: 1440px;
+    max-width: 428px;
+    max-height: 432px ;
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 428px 432px;
     background-position: center; 
     background-color: #2E2F42;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/mob@1x.jpg);
@@ -351,25 +352,31 @@ body {
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-bg {
+  .hero-bg {    
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/mob@2x.jpg);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-bg{
+    background-size: 768px 436px;
+    max-width: 768px;
+    max-height: 436px;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/tab@1x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-bg {
+  .hero-bg {  
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/tab@2x.jpg);
   }
 }
 }
 @media only screen and (min-width: 1158px) {
   .hero-bg {
+    background-size: 1440px 436px;
+    max-width: 1440px;
+    max-height: 436px;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/desk@1x.jpg);
     }
     @media (min-device-pixel-ratio: 2),
@@ -1164,12 +1171,17 @@ body {
     /* padding-right: 24px;
     padding-top: 24px; */
     background-color: #FCFCFC;
-    max-width: 392px;
+    width: 100vw;
     min-height: 576px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;    
     transition: transform var(--transition)
     }
+@media only screen and (min-width: 428px) {
+  .modal  {
+    width:396px
+  }
+}  
 @media only screen and (min-width: 768px) {
   .modal {
     width: 408px;
