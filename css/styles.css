@@ -238,6 +238,7 @@ body {
   .header-address-menu {
     flex-direction: column;
     gap: 12px;
+    font-size: 12px;
       }
 }
 @media only screen and (min-width: 1158px) {
@@ -320,20 +321,22 @@ body {
     padding-top: 112px;
     padding-bottom: 112px; 
 }
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 112px;
+    padding-bottom: 112px; 
+  }
+}
 @media screen and (min-width: 1158px) {
   .hero-section {
     padding-top: 188px;
     padding-bottom: 188px;
-
   }
 }
 .hero-bg{
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 432px;
-    max-width: 428px;
     background-position: center; 
-    margin: 0 auto;
     background-color: #2E2F42;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/mob@1x.jpg);
 
@@ -349,8 +352,6 @@ body {
 @media only screen and (min-width: 768px) {
   .hero-bg{
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/tab@1x.jpg);
-    min-height: 436px;
-    max-width: 768px;    
   }
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -363,8 +364,6 @@ body {
 @media only screen and (min-width: 1158px) {
   .hero-bg {
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/desk@1x.jpg);
-    min-height: 600px;
-    max-width: 1440px;
     }
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -841,6 +840,13 @@ body {
     padding-right: 156px;
     margin-bottom: 16px;
 }
+@media only screen and (max-width: 427px) {
+  .footer-logo {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 768px) {
   .footer-logo {
     display: block;
@@ -854,6 +860,11 @@ body {
     color: #F4F4FD;
     text-align: left;
     padding: 0 80px;
+}
+@media only screen and (max-width: 427px) {
+  .footer-text {
+    padding: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   .footer-text {
@@ -893,8 +904,12 @@ body {
     gap: 16px;  
     align-items: center;
     justify-content: center;
-    padding-bottom: 72px;
 
+}
+@media only screen and (max-width: 768px) {
+  .footer-social-links {
+    margin-bottom: 72px;
+  }
 }
 .social-link-hf{
     transition: background-color var(--transition);
@@ -1381,6 +1396,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .mobile-link{
 font-weight: 700;
 font-size: 36px;
@@ -1389,6 +1405,9 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
 transition: color var(--transition);
+}
+.mobile-link-s{
+  color:#4D5AE5;
 }
 .mobile-address{
   display: flex;
