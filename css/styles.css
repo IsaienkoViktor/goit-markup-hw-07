@@ -1296,11 +1296,15 @@ line-height: 1.2;
   color: #404BBF;;
 }
 .burger-btn{
-  color: black;
   border: transparent;
   background-color: transparent;
   margin-right: 16px;
 }
 .burger-icon{
+  stroke: currentColor;
   fill: currentColor;
+  margin-right: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
 }
