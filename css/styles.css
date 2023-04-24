@@ -1354,15 +1354,16 @@ body {
     visibility: visible;
     pointer-events: initial;
     background-color: white;
-    transform: translatex(100%); 
+    transform: translatex(0%); 
     transition: transform var(--transition);
-
     }
+  
 .mobile-close-btn{
-
     position: absolute;
     top: 24px;
     right: 48px;
+    transform: translatex(100%);
+    transition: transform var(--transition);
 }
 .mobile-list{
   margin-bottom: auto;
@@ -1430,14 +1431,7 @@ line-height: 1.2;
     position: absolute;
     transform: translatex(100%);
     transition: transform var(--transition);  */
-}
 
-}
-.mobile-port-over{
-   position: relative; 
-   overflow: hidden;     
-} 
-.mobile-over:hover .over,
-.mobile-over:focus .over{
-    transform: translatex(0%);
-    } 
+
+
+
