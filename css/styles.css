@@ -1325,6 +1325,7 @@ body {
     flex-direction: column;
     overflow: auto;
     gap: 40px;
+    position: fixed;
 }
 @media only screen and (min-width: 768px) {
   .mobile-menu {
