@@ -1386,11 +1386,14 @@ line-height: 1.2;
   background-color: transparent;
   margin-right: 16px;
   /* position: sticky; */
-  transition: fill var(--transition);
-  fill: #2e2f42;
+  transition: color var(--transition);
+  color: #2e2f42;
 }
 .burger-icon{
-  fill: currentColor;
-  display: inline-block;
   stroke: currentColor;
+}
+@media only screen and (min-width: 429px) {
+  .burger-btn {
+    display: none;
+  }
 }
