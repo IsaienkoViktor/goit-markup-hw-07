@@ -1312,6 +1312,7 @@ body {
     text-decoration: underline;
     color:#4D5AE5;
 }
+
 .mobile-menu{
     pointer-events: none;
     opacity: 0;
@@ -1324,6 +1325,11 @@ body {
     flex-direction: column;
     overflow: auto;
     gap: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 .mobile-menu.is-open{
     position: fixed;
