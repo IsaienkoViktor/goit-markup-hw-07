@@ -1336,7 +1336,10 @@ body {
     flex-direction: column;
     overflow: auto;
     gap: 40px;
-    position: fixed;   
+    position: fixed; 
+    z-index: 999;
+    transform: translateX(100%);
+    
    
 }
 @media only screen and (min-width: 768px) {
@@ -1356,14 +1359,16 @@ body {
     background-color: white;
     transform: translatex(0%); 
     transition: transform var(--transition);
+    transition: transform 250ms ease-in-out;
     }
+
   
 .mobile-close-btn{
     position: absolute;
     top: 24px;
     right: 48px;
-    transform: translatex(100%);
-    transition: transform var(--transition);
+    transform: translatex(0%);
+    transition: transform 250 ease-in-out;
 }
 .mobile-list{
   margin-bottom: auto;
