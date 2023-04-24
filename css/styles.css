@@ -110,13 +110,17 @@ body {
 */
 .page-header{
     max-width: 428px;
+    padding: 24px 16px;
     margin: 0 auto;
+    height: 72px;
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);    
 } 
 @media only screen and (min-width: 768px) {
   .page-header {
     min-width: 768px;
+    height: 70px;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -227,6 +231,8 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #434455;
+    text-decoration: none;
+    font-style: normal;
 }
 @media only screen and (min-width: 768px) {
   .header-address-menu {
@@ -329,7 +335,7 @@ body {
     background-position: center; 
     margin: 0 auto;
     background-color: #2E2F42;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(/images/title-bg-img/mob@1x.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/mob@1x.jpg);
 
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -342,7 +348,7 @@ body {
 
 @media only screen and (min-width: 429px) {
   .hero-bg{
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(/images/title-bg-img/tab@1x.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/tab@1x.jpg);
     min-height: 436px;
     max-width: 768px;    
   }
@@ -356,7 +362,7 @@ body {
 }
 @media only screen and (min-width: 769px) {
   .hero-bg {
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(/images/title-bg-img/desk@1x.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/desk@1x.jpg);
     min-height: 600px;
     max-width: 1440px;
     }
@@ -715,7 +721,7 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
-    /* margin-bottom: 72px; */
+    margin-bottom: 72px;
 }
 .c-list {
     display: flex;
@@ -723,32 +729,26 @@ body {
     gap: 16px;
     align-items: center;
     justify-content: center;
-    padding-top: 72px;
-    padding-bottom: 96px;
 }
 @media only screen and (min-width: 768px) {
        .c-list {
     gap: 24px;
-    padding-top: 72px;
-    padding-bottom: 96px;
   }
 }
 @media only screen and (min-width: 1158px) {
        .c-list {
     flex-wrap: nowrap;
-    padding-top: 72px;
-    padding-bottom: 120px;
   }
 }
-.c-item {
+/* .c-item {
     width: calc((100% - 32px) / 2); 
-  }
+  } */
   
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
    .c-item{
     width: calc((100% - 48px) / 3); 
   }
-}
+} */
 .c-icon{ 
     color:#8E8F99;
     transition: color var(--transition), border-color var(--transition);
@@ -882,7 +882,7 @@ body {
     gap: 16px;  
     align-items: center;
     justify-content: center;
-    padding-bottom: 72px;
+    /* padding-bottom: 72px; */
 
 }
 .social-link-hf{
@@ -1131,7 +1131,7 @@ body {
     /* padding-right: 24px;
     padding-top: 24px; */
     background-color: #FCFCFC;
-    width: 392px;
+    width: 100%;
     min-height: 576px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;    
@@ -1316,7 +1316,10 @@ body {
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
-    padding: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 35px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -1347,7 +1350,7 @@ body {
 }
 .mobile-social-link-menu{
   display: flex;
-  gap: 64px;
+  justify-content: space-between;
 }
 .mobile-link{
 font-weight: 700;
@@ -1372,6 +1375,7 @@ line-height: 1.2;
   display: block;
   width: 353px;
   margin-bottom: 40px;
+  color:#4D5AE5;
 }
 .mobile-link:hover,
 .mobile-link:focus{
@@ -1392,7 +1396,7 @@ line-height: 1.2;
 .burger-icon{
   stroke: currentColor;
 }
-@media only screen and (min-width: 429px) {
+@media only screen and (min-width: 768px) {
   .burger-btn {
     display: none;
   }
