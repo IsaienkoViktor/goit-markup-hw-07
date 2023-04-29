@@ -339,25 +339,24 @@ body {
   }
 }
 .hero-bg{
-    max-width: 428px;
-    max-height: 432px ;
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-size: 428px 432px;
     background-position: center; 
     background-color: #2E2F42;
+    background-size: 428px 432px;
+    max-width: 428px;
+    max-height: 432px;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/mob@1x.jpg);
-
 }
-@media screen and (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-bg {    
+  .hero-bg {  
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/title-bg-img/mob@2x.jpg);
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 429px) {
   .hero-bg{
     background-size: 768px 436px;
     max-width: 768px;
