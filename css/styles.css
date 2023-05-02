@@ -845,6 +845,7 @@ body {
     padding-left: 155px;
     padding-right: 156px;
     margin-bottom: 16px;
+    text-align: center;
 }
 @media only screen and (max-width: 427px) {
   .footer-logo {
